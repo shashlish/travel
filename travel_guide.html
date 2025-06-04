@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate travel guide to explore destinations, tips, and offers">
+    <meta name="keywords" content="Travel, Destinations, Tips, Adventure, Offers">
+    <meta name="author" content="Your Name">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Travel Guide </h1>
+        <p>Your go-to source for destinations, tips, and travel offers</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#countries">Countries & Cities</a></li>
+            <li><a href="tips.html">Traveler Tips</a></li>
+            <li><a href="sales.html">Sales & Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="user.html">User Page</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>About this Travel Guide</h2>
+        <p>Our travel guide helps you discover must-visit destinations, travel tips, and adventure ideas. Only for krut guys</p>
+    </section>
+
+    <section id="interactive-section">
+        <h2>Travel Specials</h2>
+        <p id="discount-banner"></p>
+        <div id="service-info"></div>
+        <h3>Our Top Destinations</h3>
+        <ul id="destinations-list"></ul>
+        <button id="contact-btn" class="btn-primary" onclick="redirectToContact()">Contact Us Now</button>
+    </section>
+
+    <section class="dynamic-destinations">
+        <h3>Manage Your Destinations</h3>
+        <div class="destination-controls">
+            <input type="text" id="destination-input" placeholder="Enter new destination">
+            <button id="add-destination">Add Destination</button>
+            <button id="remove-destination">Remove Last</button>
+        </div>
+    </section>
+
+    <section class="featured-countries-api mt-5">
+        <h2><i class="fas fa-flag"></i> Featured Countries</h2>
+        <div id="featured-countries-list" class="row">
+            <p id="featured-countries-loading" class="text-info">Загрузка избранных стран...</p>
+        </div>
+    </section>
+    <section id="random-number-game">
+        <h2>Travel Lucky Number</h2>
+        <button id="generate-number" class="btn-primary">Get Your Travel Number</button>
+        <div id="number-result" class="mt-3"></div>
+    </section>
+
+    <section class="deal-section">
+        <div id="current-deal" class="deal-container"></div>
+        <button id="update-deal-btn" class="btn btn-primary mt-3">Get New Travel Deal</button>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Danara&Alish. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

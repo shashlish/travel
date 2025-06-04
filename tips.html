@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips - Travel Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="tips-header">
+        <div class="header-content">
+            <h1>Expert Travel Tips</h1>
+            <p>Essential knowledge for your next adventure</p>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="travel_guide.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#travel-tips">Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sales.html">Sales & Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="user.html">User Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="travel-tips" class="mb-5">
+            <h2><i class="fas fa-lightbulb"></i> Essential Travel Advice</h2>
+            <div class="pro-tips-container row">
+                <div class="col-md-6 mb-4">
+                    <div class="pro-tip card">
+                        <div class="card-body">
+                            <h3 class="card-title">Before You Go</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success"></i> Check visa requirements in advance.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Inform your bank about your travel plans.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Pack light and smart.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Learn a few basic phrases in the local language.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="pro-tip card">
+                        <div class="card-body">
+                            <h3 class="card-title">While You're There</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success"></i> Stay hydrated and try local cuisine.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Keep copies of important documents.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Be aware of your surroundings.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Respect local customs and traditions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="add-tip" class="btn btn-info me-2"><i class="fas fa-plus"></i> Add Custom Tip</button>
+                <button id="remove-tip" class="btn btn-warning"><i class="fas fa-minus"></i> Remove Last Tip</button>
+            </div>
+        </section>
+
+        <section class="currency-converter mb-5">
+            <h2><i class="fas fa-money-bill-wave"></i> Currency Converter</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="amount">Amount:</label>
+                        <input type="number" class="form-control" id="amount" value="100">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-3">
+                        <label for="fromCurrency">From:</label>
+                        <select class="form-control" id="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="KZT">KZT</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-3">
+                        <label for="toCurrency">To:</label>
+                        <select class="form-control" id="toCurrency">
+                            <option value="KZT">KZT</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="convert-currency" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Convert</button>
+            <div id="conversion-result" class="mt-3 fs-5 fw-bold"></div>
+        </section>
+
+        <section class="flight-comparison mb-5">
+            <h2><i class="fas fa-plane"></i> Flight Price Comparison</h2>
+            <p>Compare prices to find the best deals!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="flight1">Flight 1 Price (<span class="math-inline">\)\:</label\>
+<input type\="number" class\="form\-control" id\="flight1"\>
+</div\>
+</div\>
+<div class\="col\-md\-6"\>
+<div class\="form\-group mb\-3"\>
+<label for\="flight2"\>Flight 2 Price \(</span>):</label>
+                        <input type="number" class="form-control" id="flight2">
+                    </div>
+                </div>
+            </div>
+            <button id="compare-prices" class="btn btn-primary"><i class="fas fa-balance-scale"></i> Compare Prices</button>
+            <div id="comparison-result" class="mt-3 fs-5 fw-bold"></div>
+        </section>
+ <section class="top-destinations mt-5">
+            <h2><i class="fas fa-globe-americas"></i> Top Must-Visit Destinations (API)</h2>
+            <div id="dynamic-destinations" class="row">
+                <p id="loading-message" class="text-info">Загрузка данных...</p>
+            </div>
+            <button id="refresh-destinations" class="btn btn-primary mb-4 mt-3">
+                <i class="fas fa-sync-alt"></i> Refresh Destinations
+            </button>
+        </section>
+        
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Danara&Alish. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

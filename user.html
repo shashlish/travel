@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Travel Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/user.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="user-header">
+        <div class="header-content">
+            <h1>Your Travel Profile</h1>
+            <p>Manage your account and upcoming trips</p>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="travel_guide.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tips.html">Travel Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sales.html">Sales & Offers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="user.html">User Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container main-content">
+        <section class="user-profile">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="images/im9.jpg" alt="User Avatar">
+                            <button class="btn btn-secondary btn-sm">Change Photo</button>
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="profile-username">Loading...</h3>
+                            <p><i class="fas fa-star"></i> Member since: <span id="join-date">Loading...</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="preferences-card">
+                        <h4><i class="fas fa-cog"></i> Preferences</h4>
+                        <ul>
+                            <li><i class="fas fa-plane"></i> Favorite airline: Delta</li>
+                            <li><i class="fas fa-bed"></i> Accommodation type: Hotel</li>
+                            <li><i class="fas fa-utensils"></i> Dietary: Vegetarian</li>
+                            <li><i class="fas fa-globe-americas"></i> Preferred region: Europe</li>
+                        </ul>
+                        <button class="btn btn-primary">Edit Preferences</button>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="upcoming-trips">
+                        <h3><i class="fas fa-calendar-alt"></i> Upcoming Trips</h3>
+                        <div class="trip-card">
+                            <div class="trip-image">
+                                <img src="images/im10.jpg" alt="Paris Trip">
+                            </div>
+                            <div class="trip-details">
+                                <h4>Paris, France</h4>
+                                <p><i class="fas fa-calendar"></i> 15-22 December 2023</p>
+                                <p><i class="fas fa-hotel"></i> Hotel: Le Parisien</p>
+                                <p><i class="fas fa-plane-departure"></i> Flight: DL123 (JFK-CDG)</p>
+                                <div class="trip-status">
+                                    <span class="badge bg-success">Confirmed</span>
+                                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="trip-card">
+                            <div class="trip-image">
+                                <img src="images/im11.jpg" alt="Tokyo Trip">
+                            </div>
+                            <div class="trip-details">
+                                <h4>Tokyo, Japan</h4>
+                                <p><i class="fas fa-calendar"></i> 10-25 March 2024</p>
+                                <p><i class="fas fa-hotel"></i> Hotel: Sakura Inn</p>
+                                <p><i class="fas fa-plane-departure"></i> Flight: JL456 (JFK-HND)</p>
+                                <div class="trip-status">
+                                    <span class="badge bg-warning">Pending Payment</span>
+                                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="wishlist-section">
+                        <h3><i class="fas fa-heart"></i> Your Wishlist</h3>
+                        <div class="wishlist-grid">
+                            <div class="wishlist-item">
+                                <img src="images/im12.jpg" alt="Bali">
+                                <div class="wishlist-overlay">
+                                    <h5>Bali, Indonesia</h5>
+                                    <button class="btn btn-sm btn-primary">Book Now</button>
+                                    <button class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="wishlist-item">
+                                <img src="images/im13.jpg" alt="Rome">
+                                <div class="wishlist-overlay">
+                                    <h5>Rome, Italy</h5>
+                                    <button class="btn btn-sm btn-primary">Book Now</button>
+                                    <button class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="wishlist-item">
+                                <img src="images/im14.jpg" alt="Sydney">
+                                <div class="wishlist-overlay">
+                                    <h5>Sydney, Australia</h5>
+                                    <button class="btn btn-sm btn-primary">Book Now</button>
+                                    <button class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Danara&Alish. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
